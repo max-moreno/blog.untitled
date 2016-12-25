@@ -29,12 +29,6 @@ function get_category($id = null){
 }
 
 function catgeory_exists($id){
-  $name = mysqli_real_escape_string($name);
-
-  $query = mysqli_query("SELECT COUNT(1) FROM 'categories' WHERE 'name' = '{$name}'");
-
-  echo mysqli_error();
-
-  return (mysqli_fetch_field($query, 0) == "0") ? false : true;
+  
 }
 ?>
