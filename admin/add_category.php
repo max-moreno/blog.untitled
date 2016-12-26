@@ -1,4 +1,5 @@
 <?php
+
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
@@ -13,7 +14,12 @@ function add_category($conn, $name){
 function category_exists($conn, $name){
   $name = mysqli_real_escape_string($conn, $name);
   $sql = "SELECT * FROM `categories` WHERE name = '{$name}'";
-  if  $sql
+  $query = mysqli_query($conn, $sql);
+  if ($name = mysqli_fetch_assoc($query)){
+    return $name;
+  } else {
+    return null;
+  }
 }
 
 if (isset($_POST['name'])){
@@ -21,7 +27,7 @@ if (isset($_POST['name'])){
 
   if(empty($name)){
     $error = "You must enter a category name";
-  } else if (category_exists($conn, $name)){
+  } else if ((category_exists($conn, $name)) == true){
     $error = "The category already exists";
   } else if (strlen($name) > 24){
     $error = "The category name is too long.";
@@ -31,6 +37,7 @@ if (isset($_POST['name'])){
     add_category($conn, $name);
   }
 }
+
 ?>
 
 
