@@ -3,7 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-include($_SERVER["DOCUMENT_ROOT"] . "/blog.untitled/resources/init.php");
+include_once($_SERVER["DOCUMENT_ROOT"] . "/blog.untitled/resources/init.php");
 
 function add_category($conn, $name){
   $name = mysqli_real_escape_string($conn, $name);
