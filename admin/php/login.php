@@ -1,9 +1,8 @@
 <?php
-
+/*
 include($_SERVER["DOCUMENT_ROOT"] . "/blog.untitled/resources/init.php");
 
 session_start();
-
 
 function login($conn, $user, $password){
   $user = mysqli_real_escape_string($conn, $user);
@@ -11,7 +10,7 @@ function login($conn, $user, $password){
   $check_login = mysqli_query("SELECT * FROM users WHERE Username = '{$user}' AND Password = '{$password}'")
 }
 
-if($_POST['login_button']){
+if($_POST['login']){
   $user = trim($_POST['user']);
   $password = trim($_POST['password']);
 
@@ -23,7 +22,7 @@ if($_POST['login_button']){
     login($conn, $user, $password);
   }
 }
-
+*/
 ?>
 <html>
   <head>

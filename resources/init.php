@@ -4,7 +4,6 @@
 include_once('config.php');
 
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
-$max = 'max';
 
 // check connection
 if (!$conn) {
