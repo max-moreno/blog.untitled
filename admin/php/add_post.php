@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ALL);
+/*error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
 include_once($_SERVER["DOCUMENT_ROOT"] . "/blog.untitled/resources/init.php");
@@ -19,9 +19,9 @@ if isset($_POST['title'] && $_POST['body'])
   $title = trim($_POST["title"]);
   $body = trim($POST["body"]);
 
-  if 
+  if
 
-
+*/
 ?>
 
 

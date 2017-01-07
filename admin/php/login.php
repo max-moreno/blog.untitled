@@ -1,5 +1,5 @@
 <?php
-
+/*
 include($_SERVER["DOCUMENT_ROOT"] . "/blog.untitled/resources/init.php");
 
 session_start();
@@ -24,5 +24,31 @@ if($_POST['login_button']){
   }
 }
 
-
+*/
 ?>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE = edge, chrome = 1">
+    <title>blog.untitled: Login</title>
+  </head>
+  <body>
+    <h3>Login Page</h3>
+    <p><a href= "../../index.php">Home Page</a></p>
+    <p><a href = "register.php">Register</a></p>
+    <form action = "" method = "post">
+      <div>
+        <label name = "username">Username</label>
+        <input type ="text" name = "username" value = ""/>
+      </div>
+      <div>
+        <label name = "password">Password</label>
+        <input type = "text" name = "password" value ""/>
+      </div>
+      <div>
+        <input type = "submit" value = "login"/>
+      </div>
+    </form>
+
+  </body>
+</html>
