@@ -18,7 +18,7 @@
   $username = $_POST['username'];
   $password = $_POST['password'];
 
-  login($conn, $email, $username, $password);
+  register($conn, $email, $username, $password);
 */
 ?>
 
